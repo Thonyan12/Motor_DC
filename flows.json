@@ -1,1 +1,2159 @@
-[]
+[
+    {
+        "id": "5c04f096fc175d45",
+        "type": "tab",
+        "label": "Proyecto",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d72f4c2790f273e5",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "b58717354d05d346",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#4263eb",
+            "primary": "#5c7cfa",
+            "bgPage": "#f0f7ff",
+            "groupBg": "#f0f7ff",
+            "groupOutline": "#f0f7ff"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "17d7f1d88f0c246d",
+        "type": "ui-page",
+        "name": "Graficos de Líneas",
+        "ui": "d72f4c2790f273e5",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "b58717354d05d346",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "24"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "12"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "18"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "24"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "91af393c836af603",
+        "type": "ui-page",
+        "name": "Presentación",
+        "ui": "d72f4c2790f273e5",
+        "path": "/",
+        "icon": "school",
+        "layout": "grid",
+        "theme": "b58717354d05d346",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "24"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "12"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "18"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "24"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "cb6b31c3b27a8702",
+        "type": "ui-page",
+        "name": "Motor DC",
+        "ui": "d72f4c2790f273e5",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "b58717354d05d346",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "24"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "12"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "18"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "24"
+            }
+        ],
+        "order": 2,
+        "className": "<style> /* ============================================    ESTILOS PARA MEDIDORES (GAUGES) - MÉTODO DIRECTO    Se definen variables propias para asegurar que existan. ============================================ */  /* Variables de color locales para estos estilos */ :root {     --mi-color-primario: #5C7CFA;     --mi-color-header: #4263EB;     --mi-color-texto: #212529; }  /* --- VELOCIDAD --- */ .gauge-velocidad .value {     font-size: 2.8em !important;     font-weight: 700 !important;     color: var(--mi-color-header) !important; } .gauge-velocidad .segments path:nth-of-type(1) {     fill: var(--mi-color-primario) !important; } .gauge-velocidad .segments path:nth-of-type(2) {     fill: #ffc800 !important; } .gauge-velocidad .segments path:nth-of-type(3) {     fill: #ef5350 !important; }  /* --- TEMPERATURA --- */ .gauge-temperatura .value {     font-weight: 600 !important; } .gauge-temperatura .segments path:nth-of-type(1) {     fill: #42A5F5 !important; } .gauge-temperatura .segments path:nth-of-type(2) {     fill: #FFA726 !important; } .gauge-temperatura .segments path:nth-of-type(3) {     fill: #E53935 !important; }  /* --- CORRIENTE --- */ .gauge-corriente .segments path:nth-of-type(1) {     fill: var(--mi-color-primario) !important; } .gauge-corriente .segments path:nth-of-type(2) {     fill: #f57c00 !important; } .gauge-corriente .segments path:nth-of-type(3) {     fill: #c62828 !important; }  /* --- TORQUE --- */ .gauge-torque .value {     font-weight: 700 !important;     color: var(--mi-color-texto) !important; } .gauge-torque .segments path:nth-of-type(1) {     fill: #26A69A !important; } .gauge-torque .segments path:nth-of-type(2) {     fill: #FFCA28 !important; } .gauge-torque .segments path:nth-of-type(3) {     fill: #E53935 !important; } </style>",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "84528a78d0b6cfbf",
+        "type": "ui-group",
+        "name": "Gráficos de Línea separados",
+        "page": "17d7f1d88f0c246d",
+        "width": "24",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6fcba14765e343aa",
+        "type": "ui-group",
+        "name": "Bienvenida al Proyecto",
+        "page": "91af393c836af603",
+        "width": 24,
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "nrdb-ui-group",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "23668d8eda212b45",
+        "type": "ui-group",
+        "name": "Ventilador",
+        "page": "cb6b31c3b27a8702",
+        "width": 5,
+        "height": 1,
+        "order": 7,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f649961eceb4a0b7",
+        "type": "ui-group",
+        "name": "Visualización de KPIS",
+        "page": "cb6b31c3b27a8702",
+        "width": 11,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "824aac0daf0e8537",
+        "type": "ui-group",
+        "name": "Temperatura",
+        "page": "cb6b31c3b27a8702",
+        "width": 4,
+        "height": 1,
+        "order": 6,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5be953d579d11fb0",
+        "type": "ui-group",
+        "name": "Torque del motor",
+        "page": "cb6b31c3b27a8702",
+        "width": 6,
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "87d497d737fe100f",
+        "type": "ui-group",
+        "name": "Corriente",
+        "page": "cb6b31c3b27a8702",
+        "width": 3,
+        "height": 1,
+        "order": 8,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1b3b7d4c3ed473e2",
+        "type": "ui-group",
+        "name": "Velocidad",
+        "page": "cb6b31c3b27a8702",
+        "width": 6,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6dfc3401f237d2b5",
+        "type": "ui-group",
+        "name": "Controles e Historial",
+        "page": "cb6b31c3b27a8702",
+        "width": "6",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "nrdb-ui-group",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "8d9abd882d918ab6",
+        "type": "ui-group",
+        "name": "Metricas",
+        "page": "cb6b31c3b27a8702",
+        "width": 24,
+        "height": 1,
+        "order": 9,
+        "showTitle": true,
+        "className": "nrdb-ui-group",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "30cd4a155ded2004",
+        "type": "ui-group",
+        "name": "Visualizacion",
+        "page": "cb6b31c3b27a8702",
+        "width": 7,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "nrdb-ui-group",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "33b8d60f4ee7e25d",
+        "type": "ui-slider",
+        "z": "5c04f096fc175d45",
+        "group": "6dfc3401f237d2b5",
+        "name": "Control PWM",
+        "label": "PWM (%)",
+        "tooltip": "",
+        "order": 5,
+        "width": "6",
+        "height": "1",
+        "passthru": false,
+        "outs": "all",
+        "topic": "pwm",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": false,
+        "x": 130,
+        "y": 820,
+        "wires": [
+            [
+                "8128f64b3c3a1262"
+            ]
+        ]
+    },
+    {
+        "id": "0f1f0128cd384815",
+        "type": "ui-slider",
+        "z": "5c04f096fc175d45",
+        "group": "6dfc3401f237d2b5",
+        "name": "Carga",
+        "label": "Carga (Nm)",
+        "tooltip": "",
+        "order": 6,
+        "width": "6",
+        "height": "1",
+        "passthru": false,
+        "outs": "all",
+        "topic": "carga",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": 10,
+        "step": "0.5",
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": false,
+        "x": 110,
+        "y": 900,
+        "wires": [
+            [
+                "9f0fe7f2ca50808f"
+            ]
+        ]
+    },
+    {
+        "id": "580543fb1a83a0ee",
+        "type": "inject",
+        "z": "5c04f096fc175d45",
+        "name": "reloj",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "8894c5a1c71c58ed"
+            ]
+        ]
+    },
+    {
+        "id": "8128f64b3c3a1262",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pwm",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9f0fe7f2ca50808f",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "carga",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8894c5a1c71c58ed",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pwm",
+                "pt": "msg",
+                "to": "$flowContext('temp') > 85 ? $min([30, $flowContext('pwm') != null ? $flowContext('pwm') : 0]) : $flowContext('temp') > 80 ? $min([60, $flowContext('pwm') != null ? $flowContext('pwm') : 0]) : ($flowContext('pwm') != null ? $flowContext('pwm') : 0)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "carga",
+                "pt": "msg",
+                "to": "$flowContext('carga') != null ? $flowContext('carga') : 0",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "V_motor",
+                "pt": "msg",
+                "to": "pwm * 0.12",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "omega_anterior",
+                "pt": "msg",
+                "to": "$flowContext('omega') != null ? $flowContext('omega') : 0",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "torque_motor",
+                "pt": "msg",
+                "to": "V_motor * 0.8",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "torque_neto",
+                "pt": "msg",
+                "to": "torque_motor - carga - (omega_anterior * 0.001)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "aceleracion",
+                "pt": "msg",
+                "to": "torque_neto * 100",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "omega_rpm",
+                "pt": "msg",
+                "to": "$flowContext('direccion') != null ? ($flowContext('direccion') * $min([3000, $max([0, $abs(omega_anterior) + (aceleracion * 0.5)])])) : $min([3000, $max([0, omega_anterior + (aceleracion * 0.5)])])",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "omega",
+                "pt": "flow",
+                "to": "omega_rpm",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "corriente",
+                "pt": "msg",
+                "to": "$min([10, (omega_rpm * 0.001) + (pwm * 0.05)])",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "temperatura",
+                "pt": "msg",
+                "to": "$min([100, $max([25, $flowContext('temp') != null ? $flowContext('temp') + (corriente * 0.02) - 0.05 : 25])])",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "flow",
+                "to": "temperatura < 25 ? 25 : temperatura",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 170,
+        "y": 400,
+        "wires": [
+            [
+                "474b57a6b7ff831d"
+            ]
+        ]
+    },
+    {
+        "id": "d602051e18a84800",
+        "type": "ui-gauge",
+        "z": "5c04f096fc175d45",
+        "name": "Velocidad (RPM)",
+        "group": "8d9abd882d918ab6",
+        "order": 4,
+        "value": "omega_rpm",
+        "valueType": "msg",
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Velocidad",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "RPM",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "1000",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "2000",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "3000",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "gauge-completo",
+        "x": 790,
+        "y": 580,
+        "wires": [
+            [
+                "debe37b26825bc2a"
+            ]
+        ]
+    },
+    {
+        "id": "2954c346761bbc31",
+        "type": "ui-gauge",
+        "z": "5c04f096fc175d45",
+        "name": "Corriente (A)",
+        "group": "8d9abd882d918ab6",
+        "order": 3,
+        "value": "corriente",
+        "valueType": "msg",
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Corriente",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "A",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "3",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": 10,
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "gauge-completo",
+        "x": 770,
+        "y": 620,
+        "wires": [
+            [
+                "f4ae55dd62f8df0b"
+            ]
+        ]
+    },
+    {
+        "id": "e0504d0277726877",
+        "type": "ui-gauge",
+        "z": "5c04f096fc175d45",
+        "name": "Temperatura (°C)",
+        "group": "8d9abd882d918ab6",
+        "order": 2,
+        "value": "temperatura",
+        "valueType": "msg",
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Temperatura",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "20",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "20",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "gauge-completo",
+        "x": 790,
+        "y": 660,
+        "wires": [
+            [
+                "497f9f7cc7119528"
+            ]
+        ]
+    },
+    {
+        "id": "59ea91b55d65606f",
+        "type": "ui-gauge",
+        "z": "5c04f096fc175d45",
+        "name": "Torque Motor (Nm)",
+        "group": "8d9abd882d918ab6",
+        "order": 1,
+        "value": "torque_motor",
+        "valueType": "msg",
+        "width": "6",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "rounded",
+        "title": "Torque Motor",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "Nm",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "8",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "12",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "gauge-completo",
+        "x": 790,
+        "y": 700,
+        "wires": [
+            [
+                "d3f65d2d099d2f8b"
+            ]
+        ]
+    },
+    {
+        "id": "32fc76621f6e1d2c",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "velocidad",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Velocidad RPM",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "omega_rpm",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 340,
+        "wires": [
+            [
+                "96c9ff6d6bede0ee",
+                "b0494ae7d09946e5"
+            ]
+        ]
+    },
+    {
+        "id": "0b32b879b692f680",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "Corriente",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Corriente A",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "corriente",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 380,
+        "wires": [
+            [
+                "96c9ff6d6bede0ee",
+                "83241259dd5a4f2d"
+            ]
+        ]
+    },
+    {
+        "id": "03a7166e4cfd4807",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "Temperatura",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Temperatura °C",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "temperatura",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 420,
+        "wires": [
+            [
+                "96c9ff6d6bede0ee",
+                "86e5134aa26d2139"
+            ]
+        ]
+    },
+    {
+        "id": "711abc5718e2540d",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "Torque",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Torque Nm",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "torque_motor",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 460,
+        "wires": [
+            [
+                "96c9ff6d6bede0ee",
+                "55c1925ca3a12319"
+            ]
+        ]
+    },
+    {
+        "id": "b51f7b467d6bb6b8",
+        "type": "ui-template",
+        "z": "5c04f096fc175d45",
+        "group": "30cd4a155ded2004",
+        "page": "",
+        "ui": "",
+        "name": "Motor animado",
+        "order": 2,
+        "width": 7,
+        "height": "6",
+        "head": "",
+        "format": "<template>\n    <div class=\"motor-container\">\n        <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 300 250\">\n            <defs>\n                <linearGradient id=\"bgGrad\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n                    <stop offset=\"0%\" style=\"stop-color:#FFFFFF;stop-opacity:1\" />\n                    <stop offset=\"100%\" style=\"stop-color:#F8F9FA;stop-opacity:1\" />\n                </linearGradient>\n                <linearGradient id=\"rotorGrad\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"100%\">\n                    <stop offset=\"0%\" :style=\"'stop-color:' + rotorColor + ';stop-opacity:1'\" />\n                    <stop offset=\"100%\" :style=\"'stop-color:' + rotorColorDark + ';stop-opacity:1'\" />\n                </linearGradient>\n                <linearGradient id=\"metalGrad\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n                    <stop offset=\"0%\" style=\"stop-color:#DEE2E6;stop-opacity:1\" />\n                    <stop offset=\"50%\" style=\"stop-color:#FFFFFF;stop-opacity:1\" />\n                    <stop offset=\"100%\" style=\"stop-color:#CED4DA;stop-opacity:1\" />\n                </linearGradient>\n                <filter id=\"shadow\">\n                    <feDropShadow dx=\"1\" dy=\"1\" stdDeviation=\"1.5\" flood-opacity=\"0.15\" />\n                </filter>\n            </defs>\n            <rect x=\"30\" y=\"80\" width=\"240\" height=\"120\" fill=\"url(#bgGrad)\" stroke=\"#DEE2E6\" stroke-width=\"2\" rx=\"6\" filter=\"url(#shadow)\" />\n            <rect x=\"40\" y=\"90\" width=\"220\" height=\"18\" fill=\"#F8F9FA\" opacity=\"0.8\" rx=\"3\" />\n            <rect x=\"40\" y=\"172\" width=\"220\" height=\"18\" fill=\"#F8F9FA\" opacity=\"0.8\" rx=\"3\" />\n            <circle cx=\"45\" cy=\"95\" r=\"3\" fill=\"#DEE2E6\" stroke=\"#CED4DA\" stroke-width=\"1\" />\n            <circle cx=\"255\" cy=\"95\" r=\"3\" fill=\"#DEE2E6\" stroke=\"#CED4DA\" stroke-width=\"1\" />\n            <circle cx=\"45\" cy=\"185\" r=\"3\" fill=\"#DEE2E6\" stroke=\"#CED4DA\" stroke-width=\"1\" />\n            <circle cx=\"255\" cy=\"185\" r=\"3\" fill=\"#DEE2E6\" stroke=\"#CED4DA\" stroke-width=\"1\" />\n            <line x1=\"50\" y1=\"100\" x2=\"50\" y2=\"108\" stroke=\"#CED4DA\" stroke-width=\"1.5\" />\n            <line x1=\"58\" y1=\"100\" x2=\"58\" y2=\"108\" stroke=\"#CED4DA\" stroke-width=\"1.5\" />\n            <line x1=\"66\" y1=\"100\" x2=\"66\" y2=\"108\" stroke=\"#CED4DA\" stroke-width=\"1.5\" />\n            <line x1=\"74\" y1=\"100\" x2=\"74\" y2=\"108\" stroke=\"#CED4DA\" stroke-width=\"1.5\" />\n            <rect x=\"10\" y=\"137\" width=\"25\" height=\"26\" fill=\"url(#metalGrad)\" stroke=\"#CED4DA\" stroke-width=\"1.5\" rx=\"2\" />\n            <line x1=\"15\" y1=\"150\" x2=\"30\" y2=\"150\" stroke=\"#DEE2E6\" stroke-width=\"1\" />\n            <g :style=\"'transform-origin: 283px 150px; transform: rotate(' + rotation + 'deg)'\">\n                <rect x=\"265\" y=\"137\" width=\"36\" height=\"26\" fill=\"url(#metalGrad)\" stroke=\"#CED4DA\" stroke-width=\"1.5\" rx=\"2\" />\n                <line x1=\"273\" y1=\"137\" x2=\"273\" y2=\"163\" stroke=\"#CED4DA\" stroke-width=\"2\" />\n                <line x1=\"293\" y1=\"137\" x2=\"293\" y2=\"163\" stroke=\"#CED4DA\" stroke-width=\"2\" />\n            </g>\n            <ellipse cx=\"150\" cy=\"150\" rx=\"52\" ry=\"52\" fill=\"#FFFFFF\" opacity=\"0.5\" stroke=\"#DEE2E6\" stroke-width=\"1.5\" />\n            <g :style=\"'transform-origin: 150px 150px; transform: rotate(' + rotation + 'deg)'\">\n                <circle cx=\"150\" cy=\"150\" r=\"38\" fill=\"url(#rotorGrad)\" stroke=\"#DEE2E6\" stroke-width=\"2\" filter=\"url(#shadow)\" />\n                <rect x=\"147\" y=\"112\" width=\"6\" height=\"33\" fill=\"#FFFFFF\" rx=\"1.5\" />\n                <rect x=\"147\" y=\"155\" width=\"6\" height=\"33\" fill=\"#FFFFFF\" rx=\"1.5\" />\n                <rect x=\"112\" y=\"147\" width=\"33\" height=\"6\" fill=\"#FFFFFF\" rx=\"1.5\" />\n                <rect x=\"155\" y=\"147\" width=\"33\" height=\"6\" fill=\"#FFFFFF\" rx=\"1.5\" />\n                <circle cx=\"150\" cy=\"126\" r=\"3.5\" fill=\"#DEE2E6\" stroke=\"#CED4DA\" stroke-width=\"1\" />\n                <circle cx=\"150\" cy=\"174\" r=\"3.5\" fill=\"#DEE2E6\" stroke=\"#CED4DA\" stroke-width=\"1\" />\n                <circle cx=\"126\" cy=\"150\" r=\"3.5\" fill=\"#DEE2E6\" stroke=\"#CED4DA\" stroke-width=\"1\" />\n                <circle cx=\"174\" cy=\"150\" r=\"3.5\" fill=\"#DEE2E6\" stroke=\"#CED4DA\" stroke-width=\"1\" />\n            </g>\n            <circle cx=\"150\" cy=\"150\" r=\"11\" fill=\"#F8F9FA\" stroke=\"#DEE2E6\" stroke-width=\"1.5\" />\n            <circle cx=\"150\" cy=\"150\" r=\"5\" fill=\"#CED4DA\" />\n            <circle cx=\"100\" cy=\"72\" r=\"7\" fill=\"#5C7CFA\" stroke=\"#4263EB\" stroke-width=\"2\" />\n            <circle cx=\"200\" cy=\"72\" r=\"7\" fill=\"#ADB5BD\" stroke=\"#6C757D\" stroke-width=\"2\" />\n            <text x=\"100\" y=\"60\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#495057\">+</text>\n            <text x=\"200\" y=\"60\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#495057\">−</text>\n            <line x1=\"100\" y1=\"79\" x2=\"100\" y2=\"90\" stroke=\"#5C7CFA\" stroke-width=\"2.5\" />\n            <line x1=\"200\" y1=\"79\" x2=\"200\" y2=\"90\" stroke=\"#ADB5BD\" stroke-width=\"2.5\" />\n            <rect x=\"115\" y=\"208\" width=\"70\" height=\"28\" fill=\"#FFFFFF\" stroke=\"#DEE2E6\" stroke-width=\"1.5\" rx=\"3\" />\n            <text x=\"150\" y=\"220\" text-anchor=\"middle\" font-size=\"9\" fill=\"#495057\" font-family=\"monospace\">DC MOTOR</text>\n            <text x=\"150\" y=\"230\" text-anchor=\"middle\" font-size=\"8\" fill=\"#6C757D\" font-family=\"monospace\">12V 5000RPM</text>\n            <circle cx=\"248\" cy=\"96\" r=\"6\" :fill=\"tempColor\" stroke=\"#DEE2E6\" stroke-width=\"2\">\n                <animate v-if=\"currentTemp > 60\" attributeName=\"opacity\" values=\"1;0.4;1\" dur=\"1.5s\" repeatCount=\"indefinite\" />\n            </circle>\n        </svg>\n        <div class=\"rpm-display\" :class=\"{'warning': currentTemp > 60, 'alert': currentTemp > 80}\">\n            <div class=\"rpm-value\">{{ iconDir }} {{ rpmAbs }}</div>\n            <div class=\"rpm-label\">RPM</div>\n            <div class=\"temp-indicator\">{{ tempRound }}°C</div>\n        </div>\n        <div class=\"status-bar\" :class=\"statusCls\">{{ statusTxt }}</div>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            rotation: 0,\n            currentRPM: 0,\n            currentTemp: 25,\n            animationFrame: null\n        }\n    },\n    computed: {\n        rpmAbs() {\n            return Math.abs(Math.round(this.currentRPM));\n        },\n        tempRound() {\n            return Math.round(this.currentTemp);\n        },\n        iconDir() {\n            if (this.currentRPM > 0) return '⬆️';\n            if (this.currentRPM < 0) return '⬇️';\n            return '⏸️';\n        },\n        rotorColor() {\n            if (this.currentTemp > 80) return '#c62828';\n            if (this.currentTemp > 60) return '#f57c00';\n            return '#5C7CFA';\n        },\n        rotorColorDark() {\n            if (this.currentTemp > 80) return '#8e0000';\n            if (this.currentTemp > 60) return '#bf360c';\n            return '#4263EB';\n        },\n        tempColor() {\n            if (this.currentTemp > 80) return '#c62828';\n            if (this.currentTemp > 60) return '#f57c00';\n            return '#66bb6a';\n        },\n        statusCls() {\n            if (this.currentTemp > 80) return 'status-alert';\n            const abs = Math.abs(this.currentRPM);\n            if (abs > 2500) return 'status-high';\n            if (abs > 0) return 'status-running';\n            return 'status-stopped';\n        },\n        statusTxt() {\n            if (this.currentTemp > 80) return '⚠ TEMPERATURA CRÍTICA';\n            const abs = Math.abs(this.currentRPM);\n            if (abs > 2500) {\n                return this.currentRPM > 0 ? '→ ALTA VELOCIDAD' : '← ALTA VELOCIDAD REVERSA';\n            }\n            if (abs > 0) {\n                return this.currentRPM > 0 ? '● OPERANDO' : '● OPERANDO REVERSA';\n            }\n            return '○ DETENIDO';\n        }\n    },\n    watch: {\n        msg(newMsg) {\n            if (newMsg.omega_rpm !== undefined) {\n                this.currentRPM = newMsg.omega_rpm;\n            }\n            if (newMsg.temperatura !== undefined) {\n                this.currentTemp = newMsg.temperatura;\n            }\n            this.animate();\n        }\n    },\n    methods: {\n        animate() {\n            if (this.animationFrame) {\n                cancelAnimationFrame(this.animationFrame);\n            }\n            const doStep = () => {\n                const spd = this.currentRPM / 60;\n                this.rotation += spd;\n                if (this.rotation >= 360) this.rotation -= 360;\n                if (this.rotation < 0) this.rotation += 360;\n                if (Math.abs(this.currentRPM) > 0) {\n                    this.animationFrame = requestAnimationFrame(doStep);\n                }\n            };\n            if (Math.abs(this.currentRPM) > 0) {\n                doStep();\n            }\n        }\n    },\n    beforeUnmount() {\n        if (this.animationFrame) {\n            cancelAnimationFrame(this.animationFrame);\n        }\n    }\n}\n</script>\n\n<style scoped>\n.motor-container{display:flex;flex-direction:column;align-items:center;padding:20px;background:#F8F9FA;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}\nsvg{max-width:100%;height:auto}\n.rpm-display{background:#FFF;padding:12px 25px;border-radius:6px;margin-top:15px;box-shadow:0 2px 6px rgba(0,0,0,0.08);border:1px solid #DEE2E6;min-width:140px;text-align:center;position:relative;transition:all 0.3s ease}\n.rpm-display.warning{border-color:#f57c00}\n.rpm-display.alert{border-color:#c62828;animation:pulseAlert 1.5s infinite}\n@keyframes pulseAlert{0%,100%{box-shadow:0 0 8px rgba(198,40,40,0.4)}50%{box-shadow:0 0 16px rgba(198,40,40,0.6)}}\n.rpm-value{font-size:28px;font-weight:600;color:#212529;font-family:'Segoe UI','Roboto',sans-serif;letter-spacing:1px}\n.rpm-label{font-size:10px;color:#6C757D;margin-top:2px;letter-spacing:2px;font-weight:500}\n.temp-indicator{position:absolute;top:8px;right:10px;font-size:10px;color:#ADB5BD;font-family:monospace}\n.status-bar{width:100%;padding:6px;margin-top:10px;border-radius:4px;text-align:center;font-weight:600;font-size:11px;letter-spacing:0.5px;transition:all 0.3s ease;font-family:'Segoe UI',sans-serif}\n.status-stopped{background:#E9ECEF;color:#495057}\n.status-running{background:#5C7CFA;color:#FFF}\n.status-high{background:#4263EB;color:#FFF}\n.status-alert{background:#c62828;color:#ffebee;animation:statusPulse 1.5s infinite}\n@keyframes statusPulse{0%,100%{opacity:1}50%{opacity:0.85}}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 780,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9e4b5b34f664599",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pwm",
+                "pt": "flow",
+                "to": "0",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "carga",
+                "pt": "flow",
+                "to": "0",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "omega",
+                "pt": "flow",
+                "to": "0",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "flow",
+                "to": "25",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "temp_max",
+                "pt": "flow",
+                "to": "25",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "tiempo_estable",
+                "pt": "flow",
+                "to": "0",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f12fd8380d67db4",
+        "type": "debug",
+        "z": "5c04f096fc175d45",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "96c9ff6d6bede0ee",
+        "type": "ui-chart",
+        "z": "5c04f096fc175d45",
+        "group": "8d9abd882d918ab6",
+        "name": "Gráfico Temporal",
+        "label": "Gráfico Temporal",
+        "order": 5,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Time",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "3000",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 24,
+        "height": "5",
+        "className": "chart-moderno",
+        "interpolation": "linear",
+        "x": 1170,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "474b57a6b7ff831d",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "Redondear",
+        "rules": [
+            {
+                "t": "set",
+                "p": "omega_rpm",
+                "pt": "msg",
+                "to": "$round(omega_rpm, 2)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "corriente",
+                "pt": "msg",
+                "to": "$round(corriente, 2)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "temperatura",
+                "pt": "msg",
+                "to": "$round(temperatura, 2)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "torque_motor",
+                "pt": "msg",
+                "to": "$round(torque_motor, 2)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "V_motor",
+                "pt": "msg",
+                "to": "$round(V_motor, 2)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "torque_neto",
+                "pt": "msg",
+                "to": "$round(torque_neto, 2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 400,
+        "wires": [
+            [
+                "32fc76621f6e1d2c",
+                "0b32b879b692f680",
+                "03a7166e4cfd4807",
+                "711abc5718e2540d",
+                "b51f7b467d6bb6b8",
+                "4f12fd8380d67db4",
+                "d602051e18a84800",
+                "2954c346761bbc31",
+                "e0504d0277726877",
+                "59ea91b55d65606f",
+                "5a9c48e383093161",
+                "9c8ca5fbce2476e6"
+            ]
+        ]
+    },
+    {
+        "id": "861933cac92db53d",
+        "type": "ui-slider",
+        "z": "5c04f096fc175d45",
+        "group": "6dfc3401f237d2b5",
+        "name": "Slider Setpoint (velocidad deseada)",
+        "label": "Velocidad Objetivo (RPM)",
+        "tooltip": "",
+        "order": 7,
+        "width": "6",
+        "height": "1",
+        "passthru": false,
+        "outs": "all",
+        "topic": "setpoint",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": "3000",
+        "step": "50",
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": false,
+        "x": 200,
+        "y": 960,
+        "wires": [
+            [
+                "f49d9bda9fe93505"
+            ]
+        ]
+    },
+    {
+        "id": "f49d9bda9fe93505",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "change guardar setpoint",
+        "rules": [
+            {
+                "t": "set",
+                "p": "setpoint",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a9c48e383093161",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "Calcular KPIs",
+        "rules": [
+            {
+                "t": "set",
+                "p": "setpoint",
+                "pt": "msg",
+                "to": "$flowContext('setpoint') != null ? $flowContext('setpoint') : 0",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "error_vel",
+                "pt": "msg",
+                "to": "$abs(setpoint - omega_rpm)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "error_rms",
+                "pt": "msg",
+                "to": "$round($sqrt(error_vel * error_vel), 2)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "potencia_W",
+                "pt": "msg",
+                "to": "$round(V_motor * corriente, 2)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "energia_acum",
+                "pt": "msg",
+                "to": "$round(($flowContext('energia') != null ? $flowContext('energia') : 0) + (potencia_W * 0.5 / 3600), 4)",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "energia",
+                "pt": "flow",
+                "to": "energia_acum",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "eficiencia",
+                "pt": "msg",
+                "to": "omega_rpm > 0 and potencia_W > 0 ? $round($min([85, 50 + (omega_rpm / 3000 * 25) + (torque_motor / 12 * 10) - ($abs(setpoint - omega_rpm) / 3000 * 15)]), 1) : 0",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "alerta_temp",
+                "pt": "msg",
+                "to": "temperatura > 80",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "temp_maxima",
+                "pt": "msg",
+                "to": "$max([$flowContext('temp_max') != null ? $flowContext('temp_max') : 25, temperatura])",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "temp_max",
+                "pt": "flow",
+                "to": "temp_maxima",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "en_rango",
+                "pt": "msg",
+                "to": "$abs(setpoint - omega_rpm) < (setpoint * 0.05) and setpoint > 0",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "tiempo_establecimiento",
+                "pt": "msg",
+                "to": "en_rango ? ($flowContext('tiempo_estable') != null ? $flowContext('tiempo_estable') : 0) : 0",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "tiempo_estable",
+                "pt": "flow",
+                "to": "en_rango ? tiempo_establecimiento + 500 : 0",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 180,
+        "wires": [
+            [
+                "3a55e9c16acf91cc",
+                "2dc8642b6c143b56",
+                "51acc4fa54d3d589",
+                "d22455887e4e526e",
+                "a72741ceb7ac7664",
+                "3be34bceb3b22056"
+            ]
+        ]
+    },
+    {
+        "id": "3a55e9c16acf91cc",
+        "type": "switch",
+        "z": "5c04f096fc175d45",
+        "name": "Filtrar Temp Alta",
+        "property": "temperatura",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "50",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 20,
+        "wires": [
+            [
+                "8f709602a1bcfc37"
+            ]
+        ]
+    },
+    {
+        "id": "e19b7cc7d5483b3b",
+        "type": "ui-notification",
+        "z": "5c04f096fc175d45",
+        "ui": "d72f4c2790f273e5",
+        "position": "top right",
+        "colorDefault": true,
+        "color": "#000000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 1250,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f709602a1bcfc37",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "mensaje alerta",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "\"⚠️ ALERTA: Temperatura \" & $round(temperatura, 1) & \"°C - Reduce PWM\"",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 20,
+        "wires": [
+            [
+                "e19b7cc7d5483b3b"
+            ]
+        ]
+    },
+    {
+        "id": "7e481b7ea12914ea",
+        "type": "ui-button",
+        "z": "5c04f096fc175d45",
+        "group": "6dfc3401f237d2b5",
+        "name": "Reset Motor",
+        "label": "🔄 RESET",
+        "order": 4,
+        "width": "6",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "reset",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 130,
+        "y": 760,
+        "wires": [
+            [
+                "b9e4b5b34f664599"
+            ]
+        ]
+    },
+    {
+        "id": "2dc8642b6c143b56",
+        "type": "ui-text",
+        "z": "5c04f096fc175d45",
+        "group": "6dfc3401f237d2b5",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "name": "Temperatura Máxima",
+        "label": "Temperatura Máxima:  ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": 16,
+        "color": "#6c757d",
+        "wrapText": false,
+        "className": "info-sutil",
+        "value": "msg.temp_maxima & \" °C\"",
+        "valueType": "jsonata",
+        "x": 820,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "51acc4fa54d3d589",
+        "type": "ui-text",
+        "z": "5c04f096fc175d45",
+        "group": "6dfc3401f237d2b5",
+        "order": 2,
+        "width": "6",
+        "height": "1",
+        "name": "Tiempo Establecimiento",
+        "label": "Tiempo Establecimiento:  ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": 16,
+        "color": "#6c757d",
+        "wrapText": false,
+        "className": "info-sutil",
+        "value": "msg.tiempo_establecimiento & \" ms\"",
+        "valueType": "jsonata",
+        "x": 810,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8f7670a0188a4540",
+        "type": "ui-template",
+        "z": "5c04f096fc175d45",
+        "group": "",
+        "page": "cb6b31c3b27a8702",
+        "ui": "",
+        "name": "Estilos para Medidores",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": ":root {\n    --mi-color-header: #4263EB;\n    --mi-color-texto: #212529;\n}\n\n@keyframes pulsing-glow {\n    0% {\n        text-shadow: 0 0 4px rgba(76, 114, 250, 0.3);\n    }\n\n    50% {\n        text-shadow: 0 0 16px rgba(76, 114, 250, 0.8);\n    }\n\n    100% {\n        text-shadow: 0 0 4px rgba(76, 114, 250, 0.3);\n    }\n}\n\n.gauge-completo {\n    transition: all 0.3s ease;\n    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.1));\n}\n\n.gauge-completo:hover {\n    transform: translateY(-3px);\n    filter: drop-shadow(0px 5px 8px rgba(0, 0, 0, 0.15));\n}\n\n.gauge-completo .nrdb-ui-gauge-title {\n    font-weight: bold !important;\n    color: var(--mi-color-texto) !important;\n}\n\n.gauge-completo .nrdb-ui-gauge-value span {\n    font-size: 2.8em !important;\n    color: var(--mi-color-header) !important;\n    font-weight: 700 !important;\n    animation: pulsing-glow 3s ease-in-out infinite;\n}\n\n.chart-moderno .nrdb-ui-chart {\n    padding: 1rem;\n    background-color: #fdfdff;\n    border-radius: 8px;\n    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.04);\n}\n\n.chart-moderno .nrdb-ui-widget-title {\n    color: var(--mi-color-texto);\n    padding-left: 0.5rem;\n}\n\n.chart-moderno .nrdb-chart-legend span {\n    font-family: 'Segoe UI', sans-serif;\n    color: #6C757D;\n    transition: all 0.2s ease-in-out;\n}\n\n.chart-moderno .nrdb-chart-legend span:hover {\n    color: var(--mi-color-header) !important;\n    font-weight: 600;\n}\n\n.chartjs-tooltip {\n    background: rgba(255, 255, 255, 0.9) !important;\n    border: 1px solid #dee2e6 !important;\n    border-radius: 8px !important;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;\n    backdrop-filter: blur(5px);\n    font-family: 'Segoe UI', sans-serif !important;\n}\n\n.chartjs-tooltip-title {\n    font-size: 1em !important;\n    font-weight: 700 !important;\n    color: var(--mi-color-header) !important;\n    padding: 8px 12px !important;\n    border-bottom: 1px solid #e9ecef;\n}\n\n.chartjs-tooltip-body {\n    padding: 8px 12px !important;\n    color: var(--mi-color-texto) !important;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 840,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20480339aede55c3",
+        "type": "ui-template",
+        "z": "5c04f096fc175d45",
+        "group": "",
+        "page": "cb6b31c3b27a8702",
+        "ui": "",
+        "name": "Estilos para texto",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": ".metrica-clave {\n    background-color: #f8f9fa;\n    border-left: 4px solid #4263EB;\n    padding: 8px 12px !important;\n    border-radius: 4px;\n    transition: all 0.2s ease-in-out;\n}\n\n.metrica-clave:hover {\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);\n    transform: translateY(-2px);\n}\n\n.metrica-clave .nrdb-ui-text-label {\n    color: #6C757D;\n}\n\n.metrica-clave .nrdb-ui-text-value {\n    font-weight: 700 !important;\n    font-size: 1.1em !important;\n    color: #212529;\n}\n\n.estado-destacado {\n    text-align: right;\n}\n\n.estado-destacado .nrdb-ui-text-label {\n    font-size: 0.9em;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n}\n\n.estado-destacado .nrdb-ui-text-value {\n    font-size: 1.2em !important;\n    font-weight: bold !important;\n    color: #4CAF50;\n}\n\n.estado-destacado.alerta .nrdb-ui-text-value {\n    color: #F44336 !important;\n    animation: blink-alert 1.5s infinite;\n}\n\n@keyframes blink-alert {\n    50% {\n        opacity: 0.6;\n    }\n}\n\n.info-sutil {\n    border-bottom: 1px dashed #DEE2E6;\n    padding-bottom: 6px !important;\n}\n\n.info-sutil .nrdb-ui-text-label {\n    color: #6C757D;\n}\n\n.info-sutil .nrdb-ui-text-value {\n    font-family: monospace;\n    font-size: 1.1em !important;\n    color: #343a40;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 830,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0494ae7d09946e5",
+        "type": "ui-chart",
+        "z": "5c04f096fc175d45",
+        "group": "84528a78d0b6cfbf",
+        "name": "Gráfico Velocidad",
+        "label": "Velocidad",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "-3000",
+        "ymax": "3000",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#53793e",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "12",
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1170,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "83241259dd5a4f2d",
+        "type": "ui-chart",
+        "z": "5c04f096fc175d45",
+        "group": "84528a78d0b6cfbf",
+        "name": "Gráfico Corriente",
+        "label": "Corriente",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "10",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#f7e818",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#57a0ff"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "12",
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1170,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86e5134aa26d2139",
+        "type": "ui-chart",
+        "z": "5c04f096fc175d45",
+        "group": "84528a78d0b6cfbf",
+        "name": "Gráfico Temperatura",
+        "label": "Temperatura",
+        "order": 3,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#ff0000",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#57a0ff"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "12",
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1180,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55c1925ca3a12319",
+        "type": "ui-chart",
+        "z": "5c04f096fc175d45",
+        "group": "84528a78d0b6cfbf",
+        "name": "Gráfico Torque",
+        "label": "Torque",
+        "order": 4,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "12",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "60",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#57a0ff"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "12",
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1160,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e5bed60a320bd77",
+        "type": "ui-template",
+        "z": "5c04f096fc175d45",
+        "group": "",
+        "page": "",
+        "ui": "d72f4c2790f273e5",
+        "name": "grupo estilo",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "/* Página con gradiente sutil */\n.nrdb-ui-page {\n    background: linear-gradient(135deg,\n            #E3F2FD 0%,\n            #F8F9FA 50%,\n            #FFF3E0 100%) !important;\n}\n\n/* Grupos con efecto glassmorphism */\n.nrdb-ui-group {\n    background: rgba(255, 255, 255, 0.7) !important;\n    backdrop-filter: blur(12px) saturate(180%) !important;\n    -webkit-backdrop-filter: blur(12px) saturate(180%) !important;\n    border: 1px solid rgba(255, 255, 255, 0.4) !important;\n    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08),\n        0 1px 3px rgba(0, 0, 0, 0.06) !important;\n}\n\n.nrdb-ui-group:hover {\n    background: rgba(255, 255, 255, 0.85) !important;\n    transform: translateY(-2px);\n    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12) !important;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "site:style",
+        "className": "",
+        "x": 810,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52ed4fc70fae5bfe",
+        "type": "ui-switch",
+        "z": "5c04f096fc175d45",
+        "name": "Dirección",
+        "label": "Dirección del motor",
+        "group": "6dfc3401f237d2b5",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "direccion",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "-1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 760,
+        "y": 760,
+        "wires": [
+            [
+                "cb99137df3199e55"
+            ]
+        ]
+    },
+    {
+        "id": "cb99137df3199e55",
+        "type": "change",
+        "z": "5c04f096fc175d45",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "direccion",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d318091aa1f1f9db",
+        "type": "ui-template",
+        "z": "5c04f096fc175d45",
+        "group": "6fcba14765e343aa",
+        "page": "",
+        "ui": "",
+        "name": "Información del Proyecto",
+        "order": 1,
+        "width": 24,
+        "height": 13,
+        "format": "<template>\n    <div class=\"splash-container\">\n        \n        <img src=\"https://www.utmachala.edu.ec/portalwp/wp-content/uploads/2015/08/LOGO_OUT.png\" alt=\"Logo UTMACH\">\n\n        <h1>Universidad Técnica de Machala</h1>\n        \n        <h2 class=\"project-title\">Proyecto IOT: Control de Velocidad y Torque de un Motor DC</h2>\n        \n        <div class=\"project-animation-row\">\n            <span class=\"icon fan-icon\">🌀</span>\n            <span class=\"connector electric-flow\">⚡ ~ ~ ~ ⚡</span>\n            <span class=\"icon motor-icon\">⚙️</span>\n            <span class=\"connector mechanical-flow\">⟷</span>\n            <span class=\"icon car-icon\">🚗</span>\n        </div>\n        <p class=\"asignatura\">INTERNET DE LAS COSAS</p>\n        <p class=\"semestre\">6to semestre (Período 2025-2)</p>\n        \n        <p class=\"nombres\">Olaya Ronny - Lima Anthony</p>\n        <p class=\"docente\">Docente: Ing. DIXYS LEONARDO HERNANDEZ ROJAS</p>\n\n    </div>\n</template>\n\n<style>\n    /* --- ANIMACIÓN REPRESENTATIVA: ESTILOS Y KEYFRAMES --- */\n    .project-animation-row {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        margin-top: 25px; /* Espacio debajo del título del proyecto */\n        margin-bottom: 25px; /* Espacio antes de la asignatura */\n        flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */\n    }\n\n    .project-animation-row .icon {\n        font-size: 3.5em; /* Tamaño de los íconos */\n        color: var(--mi-color-header, #4263EB); /* Usa el color de tu tema */\n        margin: 0 10px;\n        line-height: 1; /* Para alinear bien los emojis */\n        text-shadow: 0 3px 8px rgba(0,0,0,0.1);\n    }\n\n    .project-animation-row .connector {\n        font-size: 1.8em;\n        color: #777; /* Un color más neutro para los conectores */\n        margin: 0 5px;\n        line-height: 1;\n    }\n\n    /* Animación del ventilador */\n    .fan-icon {\n        animation: spin 3s linear infinite;\n    }\n\n    /* Animación del flujo eléctrico (palpitando/moviéndose) */\n    .electric-flow {\n        animation: pulse-electric 1.5s ease-in-out infinite alternate;\n        color: #FFD700; /* Color amarillo para la electricidad */\n        font-weight: bold;\n    }\n\n    /* Animación del flujo mecánico (moviéndose de lado a lado) */\n    .mechanical-flow {\n        animation: flow-mechanical 2s ease-in-out infinite alternate;\n        color: #90EE90; /* Color verde claro para el movimiento mecánico */\n        font-weight: bold;\n    }\n\n    /* Animación del carrito/motor (moviéndose ligeramente) */\n    .car-icon {\n        animation: bounce-car 3s ease-in-out infinite alternate;\n    }\n\n    /* KEYFRAMES */\n    @keyframes spin {\n        from { transform: rotate(0deg); }\n        to { transform: rotate(360deg); }\n    }\n\n    @keyframes pulse-electric {\n        from { transform: scale(1); opacity: 0.7; }\n        to { transform: scale(1.1); opacity: 1; }\n    }\n    \n    @keyframes flow-mechanical {\n        from { transform: translateX(-5px); }\n        to { transform: translateX(5px); }\n    }\n\n    @keyframes bounce-car {\n        0% { transform: translateY(0); }\n        50% { transform: translateY(-5px); }\n        100% { transform: translateY(0); }\n    }\n\n    /* --- FIN ANIMACIÓN REPRESENTATIVA --- */\n\n\n    /* --- ESTILOS GENERALES (EXISTENTES) --- */\n    .splash-container img {\n        width: 100%;\n        max-width: 400px;\n        height: auto;\n        margin-bottom: 20px;\n    }\n    .splash-container {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        height: 100%;\n        text-align: center;\n        padding: 10px;\n    }\n    .splash-container h1 {\n        font-size: 2.2em;\n        color: var(--mi-color-header, #4263EB);\n        margin: 0 0 15px 0;\n    }\n    \n    .splash-container .project-title {\n        font-size: 1.4em;\n        color: var(--mi-color-texto, #212529);\n        margin: 10px 0;\n        font-weight: 600;\n    }\n    \n    .splash-container .asignatura {\n        font-size: 1.2em;\n        color: #444;\n        margin: 15px 0 5px 0;\n        font-weight: 500;\n    }\n\n    .splash-container .semestre, .splash-container .nombres {\n        font-size: 1.1em;\n        color: #6C757D;\n        margin: 5px 0;\n    }\n\n    .splash-container .docente {\n        font-size: 1.1em;\n        color: #6C757D;\n        margin-top: 20px;\n        font-style: italic;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 170,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b2e3d8691c7f9df6",
+        "type": "comment",
+        "z": "5c04f096fc175d45",
+        "name": "PRESENTACIÓN",
+        "info": "",
+        "x": 140,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "6c45ca241d724f69",
+        "type": "ui-template",
+        "z": "5c04f096fc175d45",
+        "group": "23668d8eda212b45",
+        "page": "",
+        "ui": "",
+        "name": "Ventilador",
+        "order": 1,
+        "width": 4,
+        "height": 6,
+        "head": "",
+        "format": " <template>\n    <div class=\"fan-card-container\">\n        <div class=\"visual-card fan-card\">\n            <div class=\"card-title\">🌀 Motor DC</div>\n            <div class=\"fan-viz\">\n                <div class=\"fan-complete-body\">\n                    <div class=\"fan-grill-front\"></div>\n                    \n                    <div class=\"fan-main-head\">\n                        <div class=\"blades-integrated\" v-bind:style=\"{ animation: msg.payload?.fanAnimationStyle ?? 'none' }\">\n                            <div class=\"blade-integrated blade1-integrated\"></div>\n                            <div class=\"blade-integrated blade2-integrated\"></div>\n                            <div class=\"blade-integrated blade3-integrated\"></div>\n                        </div>\n                        <div class=\"fan-center-integrated\"></div>\n                    </div>\n                    \n                    <div class=\"fan-grill-back\"></div>\n\n                    <div class=\"fan-neck\"></div>\n                    <div class=\"fan-base\">\n                        <div class=\"fan-control-button\"></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card-value-display\">{{ msg.payload?.rpmValue ?? '0' }} <span class=\"card-unit\">RPM</span></div>\n        </div>\n    </div>\n</template>\n\n<style>\n    /* --- Contenedor y Estilos Generales --- */\n    .fan-card-container {\n        width: 100%; height: 100%;\n        display: flex; justify-content: center; align-items: center;\n        padding: 10px; box-sizing: border-box;\n        font-family: 'Segoe UI', sans-serif;\n    }\n    .visual-card.fan-card {\n        background: #fff; border-radius: 10px; padding: 15px;\n        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); text-align: center;\n        display: flex; flex-direction: column; align-items: center;\n        justify-content: space-between;\n        box-sizing: border-box;\n        width: 250px; /* Ancho fijo para el ejemplo, ajusta si es necesario */\n        height: 350px; /* Alto fijo para el ejemplo, ajusta si es necesario */\n    }\n    .card-title {\n        font-size: 1em; font-weight: 600; color: #333;\n        margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.5px;\n    }\n    .card-value-display {\n        font-size: 1.6em; font-weight: 700; color: #4263EB;\n        margin-top: 10px; font-family: monospace;\n    }\n    .card-unit { font-size: 0.75em; color: #777; }\n    .fan-viz {\n        flex-grow: 1; display: flex; align-items: center;\n        justify-content: center; width: 100%; margin: 10px 0;\n    }\n\n    /* --- ESTILOS PARA EL VENTILADOR COMPLETO --- */\n    .fan-complete-body {\n        position: relative;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        /* Esto permitirá que los elementos se apilen verticalmente */\n    }\n\n    /* Cabeza del ventilador (anteriormente fan-body-integrated) */\n    .fan-main-head {\n        width: 150px; /* Tamaño más grande para la cabeza */\n        height: 150px;\n        background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(200,200,200,0.1) 70%);\n        border: 8px solid #adb5bd; /* Borde más grueso para el aro exterior */\n        border-radius: 50%;\n        position: relative;\n        box-shadow: 0 3px 8px rgba(0,0,0,0.1);\n        z-index: 10; /* Asegura que la cabeza esté por encima del cuello */\n    }\n\n    /* Aspas (sin cambios, ahora dentro de fan-main-head) */\n    .blades-integrated {\n        position: absolute; top: 0; left: 0; width: 100%; height: 100%;\n    }\n    .blade-integrated {\n        position: absolute; width: 45%; height: 25%;\n        background-color: #495057; /* Aspas más oscuras */\n        border-radius: 50% / 100%;\n        top: 50%; left: 50%; transform-origin: 0% 50%;\n        box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n    }\n    .blade1-integrated { transform: translate(0, -50%) rotate(0deg); }\n    .blade2-integrated { transform: translate(0, -50%) rotate(120deg); }\n    .blade3-integrated { transform: translate(0, -50%) rotate(240deg); }\n    \n    /* Centro de las aspas */\n    .fan-center-integrated {\n        position: absolute; width: 25px; height: 25px; /* Centro más grande */\n        background-color: #343a40; /* Centro oscuro */\n        border-radius: 50%;\n        top: 50%; left: 50%; transform: translate(-50%, -50%);\n        border: 2px solid #adb5bd; /* Borde del centro */\n        z-index: 1; /* Asegura que el centro esté por encima de las aspas */\n        box-shadow: inset 0 0 5px rgba(0,0,0,0.5);\n    }\n\n    /* Rejillas (detalles opcionales) */\n    \n\n\n    /* Soporte/Cuello del ventilador */\n    .fan-neck {\n        width: 30px; /* Ancho del cuello */\n        height: 60px; /* Alto del cuello */\n        background-color: #ced4da; /* Color gris claro */\n        border-radius: 5px;\n        margin-top: -10px; /* Superponer ligeramente con la cabeza */\n        z-index: 5; /* Detrás de la cabeza, encima de la base */\n        box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);\n        border: 1px solid #adb5bd;\n    }\n\n    /* Base del ventilador */\n    .fan-base {\n        width: 180px; /* Ancho de la base */\n        height: 30px; /* Alto de la base */\n        background-color: #343a40; /* Color negro */\n        border-radius: 15px 15px 8px 8px; /* Bordes redondeados */\n        margin-top: -5px; /* Superponer ligeramente con el cuello */\n        position: relative;\n        box-shadow: 0 5px 15px rgba(0,0,0,0.3);\n        display: flex;\n        justify-content: center;\n        align-items: flex-start; /* Botón en la parte superior de la base */\n        padding-top: 5px;\n    }\n\n    /* Botón de control en la base */\n    .fan-control-button {\n        width: 25px; height: 10px;\n        background-color: #6c757d; /* Gris del botón */\n        border-radius: 3px;\n        box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);\n    }\n\n    /* --- Keyframes para la animación de giro (sin cambios) --- */\n    @keyframes spin {\n        from { transform: rotate(0deg); }\n        to { transform: rotate(360deg); }\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 360,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c8ca5fbce2476e6",
+        "type": "function",
+        "z": "5c04f096fc175d45",
+        "name": "Leer Valores",
+        "func": " // --- RANGOS DE OPERACIÓN (AJÚSTALOS A TU SIMULACIÓN) ---\nconst RANGES = {\n    speed: { min: 0, max: 3000 },\n    torque: { min: 0, max: 12 },\n    temp: { min: 20, max: 100 },\n    current: { min: 0, max: 10 },\n    voltage: { min: 0, max: 12 } // 12V = 100% PWM * 0.12\n};\n\n// --- LEER VALORES DEL MENSAJE (con valores por defecto) ---\nconst data = {\n    temp: msg.temperatura || RANGES.temp.min,\n    rpm: msg.omega_rpm || RANGES.speed.min,\n    torque: msg.torque_motor || RANGES.torque.min,\n    current: msg.corriente || RANGES.current.min,\n    voltage: msg.V_motor || RANGES.voltage.min,\n    pwm: msg.pwm || 0,\n    load: msg.carga || 0\n};\n\n// --- FUNCIONES AUXILIARES ---\nfunction clamp(value, min, max) { return Math.max(min, Math.min(max, value)); }\nfunction valueToPercentage(value, min, max) {\n    const clamped = clamp(value, min, max);\n    return (max - min === 0) ? 0 : ((clamped - min) / (max - min)) * 100;\n}\nfunction valueToGaugeAngle(value, min, max) {\n    const percentage = valueToPercentage(value, min, max) / 100;\n    return -135 + (percentage * 270); // Rango de -135 a +135 grados\n}\n\n// --- CALCULAR ESTILOS DINÁMICOS ---\n// Fan animation duration (faster RPM = shorter duration)\n// Map RPM (0-3000) to Duration (e.g., 20s - 0.2s)\nlet fanDuration = 20; // Default: very slow (20 seconds per rotation) if RPM is 0\nif (Math.abs(data.rpm) > 10) { // Add a small threshold\n    // Inverse relationship: higher RPM -> lower duration\n    fanDuration = 20 / (Math.abs(data.rpm) / 50 + 1); // Adjust the divisor '50' to scale speed\n    fanDuration = Math.max(0.2, fanDuration); // Ensure minimum duration (max speed)\n}\nconst fanAnimationStyle = `spin ${fanDuration.toFixed(1)}s linear infinite ${data.rpm < 0 ? 'reverse' : 'normal'}`; // Add reverse for negative RPM\n\n// --- CREAR OBJETO PAYLOAD ---\nmsg.payload = {\n    // Valores numéricos\n    tempValue: data.temp.toFixed(1),\n    rpmValue: Math.round(data.rpm),\n    torqueValue: data.torque.toFixed(1),\n    currentValue: data.current.toFixed(1),\n    voltageValue: data.voltage.toFixed(1),\n    pwmValue: data.pwm.toFixed(0),\n    loadValue: data.load.toFixed(1),\n\n    // Estilos calculados\n    tempFillHeight: valueToPercentage(data.temp, RANGES.temp.min, RANGES.temp.max) + '%',\n    speedNeedleTransform: `rotate(${valueToGaugeAngle(data.rpm, RANGES.speed.min, RANGES.speed.max)}deg)`,\n    torqueNeedleTransform: `rotate(${valueToGaugeAngle(data.torque, RANGES.torque.min, RANGES.torque.max)}deg)`,\n    currentBarWidth: valueToPercentage(data.current, RANGES.current.min, RANGES.current.max) + '%',\n    voltageBarWidth: valueToPercentage(data.voltage, RANGES.voltage.min, RANGES.voltage.max) + '%',\n\n    // Estilo de animación del ventilador\n    fanAnimationStyle: fanAnimationStyle\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 540,
+        "wires": [
+            [
+                "6c45ca241d724f69"
+            ]
+        ]
+    },
+    {
+        "id": "a72741ceb7ac7664",
+        "type": "function",
+        "z": "5c04f096fc175d45",
+        "name": "function 3",
+        "func": "// --- RANGOS DE OPERACIÓN (AJÚSTALOS A TU SIMULACIÓN) ---\nconst RANGES = {\n    efficiency: { min: 0, max: 100 },  // %\n    power: { min: 0, max: 120 },      // Watts (Ej: 12V * 10A, ajusta tu máximo)\n    error: { min: 0, max: 500 },       // RPM (Error RMS máximo esperado)\n    temp: { min: 20, max: 100 },       // Grados C (Para el termómetro)\n    speed: { min: 0, max: 3000 },      // RPM (Para el gauge de RPM si lo incluyes aquí)\n    torque: { min: 0, max: 12 },       // Nm (Para el gauge de Torque si lo incluyes aquí)\n    current: { min: 0, max: 10 },      // A (Para el gauge de Corriente si lo incluyes aquí)\n    voltage: { min: 0, max: 12 }       // V (Para el gauge de Voltaje si lo incluyes aquí)\n};\n\n// --- LEER VALORES DEL MENSAJE (con valores por defecto) ---\nconst data = {\n    efficiency: msg.eficiencia || 0,\n    power: msg.potencia_W || 0,\n    energy: msg.energia_acum || 0,\n    error: msg.error_rms || 0,\n    temp: msg.temperatura || RANGES.temp.min, // Añadido para termómetro\n    rpm: msg.omega_rpm || RANGES.speed.min,     // Añadido para gauge RPM\n    torque: msg.torque_motor || RANGES.torque.min, // Añadido para gauge Torque\n    current: msg.corriente || RANGES.current.min, // Añadido para gauge Corriente\n    voltage: msg.V_motor || RANGES.voltage.min,   // Añadido para gauge Voltaje\n    pwm: msg.pwm || 0,                        // Añadido para display\n    load: msg.carga || 0                      // Añadido para display\n};\n\n// --- FUNCIONES AUXILIARES ---\nfunction clamp(value, min, max) { return Math.max(min, Math.min(max, value)); }\nfunction valueToPercentage(value, min, max) {\n    const clamped = clamp(value, min, max);\n    return (max - min === 0) ? 0 : ((clamped - min) / (max - min)) * 100;\n}\nfunction valueToGaugeAngle(value, min, max) { // Para gauge semicircular\n    const percentage = valueToPercentage(value, min, max) / 100;\n    return -90 + (percentage * 180); // Rango de -90 a +90 grados\n}\nfunction valueToDuration(value, valMin, valMax, durationMax, durationMin) { // Para animaciones\n    if (value <= valMin) return durationMax;\n    const rangeVal = valMax - valMin;\n    const ratio = rangeVal === 0 ? 0 : Math.min(1, (value - valMin) / rangeVal);\n    let duration = durationMax - ratio * (durationMax - durationMin);\n    return Math.max(durationMin, duration);\n}\n\n// --- CALCULAR ESTILOS DINÁMICOS ---\n\n// 1. Eficiencia (Gauge)\nconst efficiencyAngle = valueToGaugeAngle(data.efficiency, RANGES.efficiency.min, RANGES.efficiency.max);\nconst efficiencyColor = data.efficiency < 40 ? '#ef5350' : (data.efficiency < 75 ? '#ffca28' : '#66bb6a');\n\n// 2. Potencia (Cohete)\nconst rocketSpeedDuration = valueToDuration(data.power, 1, RANGES.power.max, 5, 0.3);\nconst rocketAnimationStyle = data.power > 1 ? `launch ${rocketSpeedDuration.toFixed(1)}s linear infinite` : 'none';\n\n// 3. Energía/Potencia (Foco palpitante)\nconst bulbPulseDuration = valueToDuration(data.power, 1, RANGES.power.max, 3, 0.3);\nconst bulbAnimationStyle = data.power > 1 ? `pulse-light ${bulbPulseDuration.toFixed(1)}s ease-in-out infinite` : 'none';\n\n// 4. Error RMS (Barra)\nconst errorBarWidth = valueToPercentage(data.error, RANGES.error.min, RANGES.error.max) + '%';\n\n// 5. Termómetro (Necesario si este template lo incluye)\nconst tempFillHeight = valueToPercentage(data.temp, RANGES.temp.min, RANGES.temp.max) + '%';\n\n// 6. Otros valores para mostrar (Opcional, si los pones en este template)\n// const speedNeedleTransform = `rotate(${valueToGaugeAngle(data.rpm, RANGES.speed.min, RANGES.speed.max)}deg)`;\n// const torqueNeedleTransform = `rotate(${valueToGaugeAngle(data.torque, RANGES.torque.min, RANGES.torque.max)}deg)`;\n// const currentBarWidth = valueToPercentage(data.current, RANGES.current.min, RANGES.current.max) + '%';\n// const voltageBarWidth = valueToPercentage(data.voltage, RANGES.voltage.min, RANGES.voltage.max) + '%';\n// const batteryFillHeight = valueToPercentage(data.voltage, RANGES.voltage.min, RANGES.voltage.max) + '%';\n// const batteryFillColor = data.voltage < 3 ? '#ef5350' : (data.voltage < 8 ? '#ffca28' : '#66bb6a');\n// const fanAnimationStyle = ... (si quieres añadir el ventilador aquí también)\n\n\n// --- CREAR OBJETO PAYLOAD ---\nmsg.payload = {\n    // Valores numéricos formateados\n    efficiencyValue: data.efficiency.toFixed(1) + '%',\n    powerValue: data.power.toFixed(1) + ' W',\n    energyValue: data.energy.toFixed(2) + ' Wh',\n    errorValue: data.error.toFixed(1) + ' RPM',\n    // Opcionales para mostrar en este template si quieres:\n    tempValue: data.temp.toFixed(1),\n    rpmValue: Math.round(data.rpm),\n    // torqueValue: data.torque.toFixed(1),\n    // currentValue: data.current.toFixed(1),\n    // voltageValue: data.voltage.toFixed(1),\n    // pwmValue: data.pwm.toFixed(0),\n    // loadValue: data.load.toFixed(1),\n\n\n    // Estilos calculados\n    efficiencyNeedleTransform: `rotate(${efficiencyAngle}deg)`,\n    efficiencySegmentColor: efficiencyColor,\n    rocketAnimationStyle: rocketAnimationStyle,\n    bulbAnimationStyle: bulbAnimationStyle,\n    errorBarWidth: errorBarWidth,\n    // Opcional si incluyes termómetro aquí\n    tempFillHeight: tempFillHeight\n    // Añade aquí otros estilos si incluyes más visualizaciones\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 120,
+        "wires": [
+            [
+                "8a2015be58f9f92d"
+            ]
+        ]
+    },
+    {
+        "id": "d22455887e4e526e",
+        "type": "debug",
+        "z": "5c04f096fc175d45",
+        "name": "Salida del reloj",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "8a2015be58f9f92d",
+        "type": "ui-template",
+        "z": "5c04f096fc175d45",
+        "group": "f649961eceb4a0b7",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"kpi-grid-container\">\n\n        <div class=\"kpi-card efficiency-card\">\n            <div class=\"kpi-title\"><span class=\"icon\">💡</span> Eficiencia</div>\n            <div class=\"efficiency-gauge-container\">\n                <svg viewBox=\"0 0 200 110\" class=\"efficiency-gauge-svg\">\n                    <path d=\"M 30 100 A 70 70 0 0 1 170 100\" fill=\"none\" stroke=\"#e0e0e0\" stroke-width=\"20\" stroke-linecap=\"round\" />\n                    <path d=\"M 30 100 A 70 70 0 0 1 170 100\" fill=\"none\" v-bind:stroke=\"msg.payload?.efficiencySegmentColor ?? '#e0e0e0'\" stroke-width=\"20\" stroke-linecap=\"round\"\n                          :stroke-dasharray=\"`${(msg.payload?.efficiencyValue ? parseFloat(msg.payload.efficiencyValue) : 0) * 2.2}, 220`\" />\n                    <line x1=\"100\" y1=\"100\" x2=\"100\" y2=\"20\" stroke=\"#333\" stroke-width=\"3\" stroke-linecap=\"round\"\n                          class=\"gauge-needle\" v-bind:style=\"{ transform: msg.payload?.efficiencyNeedleTransform ?? 'rotate(-90deg)' }\" />\n                    <circle cx=\"100\" cy=\"100\" r=\"7\" fill=\"#555\" />\n                    <text x=\"175\" y=\"80\" font-size=\"24\" text-anchor=\"middle\">⚙️</text>\n                </svg>\n            </div>\n            <div class=\"kpi-value\">{{ msg.payload?.efficiencyValue ?? '--%' }}</div>\n        </div>\n\n        <div class=\"kpi-card power-card\">\n            <div class=\"kpi-title\"><span class=\"icon\">🚀</span> Potencia</div>\n            <div class=\"power-viz-container rocket-sky\">\n                <div class=\"cloud cloud1\">☁️</div>\n                <div class=\"cloud cloud2\">☁️</div>\n                <div class=\"rocket\" v-bind:style=\"{ animation: msg.payload?.rocketAnimationStyle ?? 'none' }\">🚀</div>\n            </div>\n            <div class=\"kpi-value\">{{ msg.payload?.powerValue ?? '-- W' }}</div>\n        </div>\n\n        <div class=\"kpi-card energy-card\">\n            <div class=\"kpi-title\"><span class=\"icon\">⚡</span> Energía Consumida</div>\n            <div class=\"energy-viz-container\">\n                <div class=\"light-bulb\" v-bind:style=\"{ animation: msg.payload?.bulbAnimationStyle ?? 'none' }\">💡</div>\n            </div>\n            <div class=\"kpi-value\">{{ msg.payload?.energyValue ?? '-- Wh' }}</div>\n        </div>\n\n        <div class=\"kpi-card error-card\">\n            <div class=\"kpi-title\"><span class=\"icon\">❌</span> Error RMS</div>\n            <div class=\"error-viz-container\">\n                <div class=\"error-bar\">\n                    <div class=\"error-fill\" v-bind:style=\"{ width: msg.payload?.errorBarWidth ?? '0%' }\"></div>\n                    <span class=\"error-icon\">❌</span>\n                </div>\n            </div>\n            <div class=\"kpi-value\">{{ msg.payload?.errorValue ?? '-- RPM' }}</div>\n        </div>\n\n    </div>\n</template>\n\n<style>\n    /* --- Layout General --- */\n    .kpi-grid-container{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:15px;padding:15px;font-family:'Segoe UI',sans-serif;background:#f8f9fa;border-radius:8px;height:100%;box-sizing:border-box}\n    .kpi-card{background:#fff;border-radius:10px;padding:15px;box-shadow:0 3px 10px rgba(0,0,0,0.07);text-align:center;display:flex;flex-direction:column;align-items:center;min-height:180px}\n    .kpi-title{font-size:.9em;font-weight:600;color:#555;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}\n    .kpi-title .icon{margin-right:5px}\n    .kpi-value{font-size:1.4em;font-weight:700;color:#4263EB;margin-top:auto;font-family:monospace}\n\n    /* --- Eficiencia --- */\n    .efficiency-gauge-container{width:100%;max-width:180px;margin:auto 0} .efficiency-gauge-svg{display:block;width:100%} .efficiency-gauge-svg .gauge-needle{transform-origin:100px 100px;transition:transform .5s cubic-bezier(.4,1.3,.6,1)}\n\n    /* --- Potencia (Cohete) --- */\n    .power-viz-container.rocket-sky{width:100%;flex-grow:1;overflow:hidden;position:relative;background:linear-gradient(to bottom, #87CEEB 0%, #d1f0ff 100%);border-radius:4px;display:flex;justify-content:center;align-items:flex-end}\n    .rocket{font-size:4em;position:absolute;bottom:5%;left:50%;transform:translateX(-50%)}\n    .cloud{position:absolute;font-size:2em;opacity:.6;animation:drift 20s linear infinite alternate}\n    .cloud1{top:20%;left:10%;animation-delay:-5s} .cloud2{top:40%;left:70%;animation-delay:-12s}\n    @keyframes launch{0%{transform:translate(-50%, 0);opacity:1} 90%{opacity:1} 100%{transform:translate(-50%, -150px);opacity:0}}\n    @keyframes drift{from{transform:translateX(-10px)}to{transform:translateX(10px)}}\n\n    /* --- Energía (Foco) --- */\n    .energy-viz-container{flex-grow:1;display:flex;align-items:center;justify-content:center} .light-bulb{font-size:5em;color:#ffca28;text-shadow:0 0 15px rgba(255,202,40,0.6)} @keyframes pulse-light{0%,100%{transform:scale(1);opacity:.8}50%{transform:scale(1.1);opacity:1}}\n\n    /* --- Error RMS (Barra) --- */\n    .error-viz-container{width:80%;margin:auto 0} .error-bar{height:25px;background:#e0e0e0;border-radius:12.5px;position:relative;overflow:hidden;border:1px solid #ccc} .error-fill{height:100%;background:linear-gradient(to right, #ffca28, #ef5350);border-radius:12.5px;transition:width .5s ease-out;position:absolute;left:0;top:0} .error-icon{position:absolute;right:10px;top:50%;transform:translateY(-50%);font-size:1.2em;color:#fff;text-shadow:1px 1px 2px rgba(0,0,0,0.5);opacity:.6}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 540,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "497f9f7cc7119528",
+        "type": "ui-template",
+        "z": "5c04f096fc175d45",
+        "group": "824aac0daf0e8537",
+        "page": "",
+        "ui": "",
+        "name": "Temperatura",
+        "order": 1,
+        "width": 4,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"termo-container\">\n        <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 120 280\">\n            <defs>\n                <linearGradient id=\"tuboGrad\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n                    <stop offset=\"0%\" style=\"stop-color:#eceff1;stop-opacity:1\" />\n                    <stop offset=\"50%\" style=\"stop-color:#ffffff;stop-opacity:1\" />\n                    <stop offset=\"100%\" style=\"stop-color:#cfd8dc;stop-opacity:1\" />\n                </linearGradient>\n                <linearGradient id=\"mercurioGrad\" x1=\"0%\" y1=\"100%\" x2=\"0%\" y2=\"0%\">\n                    <stop offset=\"0%\" :style=\"'stop-color:' + mercurioColor + ';stop-opacity:1'\" />\n                    <stop offset=\"100%\" :style=\"'stop-color:' + mercurioColor + ';stop-opacity:0.7'\" />\n                </linearGradient>\n            </defs>\n            \n            <text x=\"60\" y=\"20\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"bold\" fill=\"#37474f\">TEMPERATURA</text>\n            \n            <!-- Escala -->\n            <line x1=\"25\" y1=\"40\" x2=\"30\" y2=\"40\" stroke=\"#546e7a\" stroke-width=\"2\" />\n            <text x=\"20\" y=\"44\" text-anchor=\"end\" font-size=\"11\" fill=\"#37474f\">100</text>\n            \n            <line x1=\"25\" y1=\"80\" x2=\"30\" y2=\"80\" stroke=\"#546e7a\" stroke-width=\"2\" />\n            <text x=\"20\" y=\"84\" text-anchor=\"end\" font-size=\"11\" fill=\"#37474f\">80</text>\n            \n            <line x1=\"25\" y1=\"120\" x2=\"30\" y2=\"120\" stroke=\"#546e7a\" stroke-width=\"2\" />\n            <text x=\"20\" y=\"124\" text-anchor=\"end\" font-size=\"11\" fill=\"#37474f\">60</text>\n            \n            <line x1=\"25\" y1=\"160\" x2=\"30\" y2=\"160\" stroke=\"#546e7a\" stroke-width=\"2\" />\n            <text x=\"20\" y=\"164\" text-anchor=\"end\" font-size=\"11\" fill=\"#37474f\">40</text>\n            \n            <line x1=\"25\" y1=\"200\" x2=\"30\" y2=\"200\" stroke=\"#546e7a\" stroke-width=\"2\" />\n            <text x=\"20\" y=\"204\" text-anchor=\"end\" font-size=\"11\" fill=\"#37474f\">20</text>\n            \n            <line x1=\"25\" y1=\"240\" x2=\"30\" y2=\"240\" stroke=\"#546e7a\" stroke-width=\"2\" />\n            <text x=\"20\" y=\"244\" text-anchor=\"end\" font-size=\"11\" fill=\"#37474f\">0</text>\n            \n            <!-- Tubo exterior -->\n            <rect x=\"40\" y=\"35\" width=\"28\" height=\"205\" rx=\"14\" fill=\"url(#tuboGrad)\" stroke=\"#90a4ae\" stroke-width=\"2\" />\n            \n            <!-- Tubo interior -->\n            <rect x=\"44\" y=\"39\" width=\"20\" height=\"197\" rx=\"10\" fill=\"#f5f5f5\" />\n            \n            <!-- Mercurio -->\n            <rect :x=\"44\" :y=\"240 - altura\" :width=\"20\" :height=\"altura\" rx=\"10\" fill=\"url(#mercurioGrad)\" style=\"transition:all 0.6s ease\" />\n            \n            <!-- Bulbo -->\n            <circle cx=\"54\" cy=\"255\" r=\"18\" :fill=\"mercurioColor\" stroke=\"#78909c\" stroke-width=\"2\" style=\"transition:fill 0.5s ease\" />\n            <circle cx=\"50\" cy=\"251\" r=\"6\" fill=\"rgba(255,255,255,0.4)\" />\n        </svg>\n        \n        <div class=\"temp-display\">\n            <div class=\"temp-value\">{{ tempActual }}°C</div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            temperatura: 25\n        }\n    },\n    computed: {\n        tempActual() {\n            return this.temperatura.toFixed(2);\n        },\n        altura() {\n            return Math.min(200, (this.temperatura / 100) * 200);\n        },\n        mercurioColor() {\n            if (this.temperatura >= 80) return '#c62828';\n            if (this.temperatura >= 60) return '#ff9800';\n            if (this.temperatura >= 40) return '#ffc107';\n            return '#2196F3';\n        }\n    },\n    watch: {\n        msg(newMsg) {\n            if (newMsg.temperatura !== undefined) {\n                this.temperatura = newMsg.temperatura;\n            }\n        }\n    }\n}\n</script>\n\n<style scoped>\n    .termo-container { /* Sin cambios */\n        display: flex; flex-direction: column; align-items: center;\n        padding: 10px 0; /* Menos padding lateral */\n        background: transparent; border-radius: 8px;\n        width: 100%; /* Asegura que el contenedor ocupe el widget */\n        height: 100%;\n        box-sizing: border-box;\n    }\n\n    /* --- NUEVA REGLA --- */\n    .termo-container svg {\n        max-width: 80px; /* Ancho máximo deseado (ajusta este valor) */\n        height: auto; /* La altura se ajustará automáticamente */\n    }\n    /* --- FIN NUEVA REGLA --- */\n\n    .temp-display { /* Ajustar tamaño y margen */\n        background: #1e3c72; padding: 5px 10px; /* Más pequeño */\n        border-radius: 4px; margin-top: 5px; /* Menos margen */\n        box-shadow: 0 1px 4px rgba(0,0,0,0.15);\n        min-width: 70px; /* Ancho mínimo */\n        text-align: center;\n    }\n    .temp-value {\n        font-size: 18px; /* Texto más pequeño */\n        font-weight: 700; color: #ffffff; font-family: monospace;\n        letter-spacing: 1px;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1030,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3f65d2d099d2f8b",
+        "type": "ui-template",
+        "z": "5c04f096fc175d45",
+        "group": "5be953d579d11fb0",
+        "page": "",
+        "ui": "",
+        "name": "Torque",
+        "order": 1,
+        "width": 0,
+        "height": 5,
+        "head": "",
+        "format": "<template>\n    <div class=\"torque-container-circular\">\n        <div class=\"torque-title\">MEDIDOR DE ESFUERZO</div>\n\n        <div class=\"svg-wrapper\">\n            <svg viewBox=\"0 0 200 170\">\n                <defs>\n                    <linearGradient id=\"grad-motor-torque-v4\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n                        <stop offset=\"0%\" style=\"stop-color:#4263EB;stop-opacity:1\" />\n                        <stop offset=\"100%\" style=\"stop-color:#5C7CFA;stop-opacity:1\" />\n                    </linearGradient>\n                    <linearGradient id=\"grad-carga-torque-v4\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n                        <stop offset=\"0%\" style=\"stop-color:#dc3545;stop-opacity:1\" />\n                        <stop offset=\"100%\" style=\"stop-color:#f06292;stop-opacity:1\" />\n                    </linearGradient>\n                    <filter id=\"aguja-sombra-torque-v4\">\n                        <feDropShadow dx=\"1\" dy=\"2\" stdDeviation=\"1.5\" flood-opacity=\"0.3\" />\n                    </filter>\n                </defs>\n\n                <path d=\"M 43.4 156.6 A 80 80 0 1 1 156.6 156.6\" stroke=\"#e9ecef\" stroke-width=\"18\" fill=\"none\"\n                    stroke-linecap=\"round\" />\n\n                <text x=\"30\" y=\"165\" text-anchor=\"middle\" class=\"label-num\">0</text>\n                <text x=\"100\" y=\"25\" text-anchor=\"middle\" class=\"label-num\">6</text>\n                <text x=\"170\" y=\"165\" text-anchor=\"middle\" class=\"label-num\">12</text>\n\n                <g :style=\"estiloCarga\" style=\"transform-origin: 100px 100px;\">\n                    <path d=\"M 100 100 L 97 40 L 103 40 Z\" fill=\"url(#grad-carga-torque-v4)\"\n                        filter=\"url(#aguja-sombra-torque-v4)\" />\n                </g>\n\n                <g :style=\"estiloMotor\" style=\"transform-origin: 100px 100px;\">\n                    <path d=\"M 100 100 L 96 25 L 104 25 Z\" fill=\"url(#grad-motor-torque-v4)\"\n                        filter=\"url(#aguja-sombra-torque-v4)\" />\n                </g>\n\n                <circle cx=\"100\" cy=\"100\" r=\"10\" fill=\"#495057\" />\n                <circle cx=\"100\" cy=\"100\" r=\"5\" fill=\"#f8f9fa\" />\n\n                <text x=\"100\" y=\"130\" text-anchor=\"middle\" class=\"torque-label-main-svg\">TORQUE NETO</text>\n                <text x=\"100\" y=\"150\" text-anchor=\"middle\" class=\"torque-value-neto-svg\" :class=\"netoClase\">\n                    {{ (torqueNeto > 0.01) ? '+' : '' }}{{ torqueNeto.toFixed(2) }}\n                    <tspan font-size=\"0.6em\">Nm</tspan>\n                </text>\n            </svg>\n        </div>\n\n        <div class=\"torque-legend-html\">\n            <div class=\"legend-item\">\n                <span class=\"dot\" style=\"background-color: #4263EB;\"></span>\n                Motor: <b>{{ torqueMotor.toFixed(2) }}</b> Nm\n            </div>\n            <div class=\"legend-item\">\n                <span class=\"dot\" style=\"background-color: #dc3545;\"></span>\n                Carga: <b>{{ carga.toFixed(2) }}</b> Nm\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n    data() {\n        return {\n            torqueMotor: 0,\n            carga: 0,\n            torqueNeto: 0,\n            maxTorque: 12 \n        }\n    },\n    computed: {\n        // Esta función ahora mapea de 0-12 a -135° (7 en punto) y +135° (5 en punto)\n        mapToAngle() {\n            return (value) => {\n                const totalAngleRange = 270; // Rango total de 270 grados\n                const startAngle = -135; // Ángulo de inicio (7 en punto)\n                \n                // Mapea el valor (0-12) al rango de ángulo\n                let angulo = (value / this.maxTorque) * totalAngleRange + startAngle;\n                \n                // Limita el ángulo a los bordes\n                angulo = Math.max(-135, Math.min(135, angulo));\n                \n                return `transform: rotate(${angulo}deg);`;\n            }\n        },\n        estiloMotor() {\n            return this.mapToAngle(this.torqueMotor);\n        },\n        estiloCarga() {\n            return this.mapToAngle(this.carga);\n        },\n        netoClase() {\n            if (this.torqueNeto > 0.1) return 'positivo';\n            if (this.torqueNeto < -0.1) return 'negativo';\n            return 'neutro';\n        }\n    },\n    watch: {\n        msg(newMsg) {\n            if (newMsg.torque_motor !== undefined) {\n                this.torqueMotor = newMsg.torque_motor;\n            }\n            if (newMsg.carga !== undefined) {\n                this.carga = newMsg.carga;\n            }\n            if (newMsg.torque_neto !== undefined) {\n                this.torqueNeto = newMsg.torque_neto;\n            }\n        }\n    }\n}\n</script>\n\n<style scoped>\n    /* Contenedor principal */\n    .torque-container-circular {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        justify-content: space-between;\n        /* Empuja leyenda abajo */\n        width: 100%;\n        height: 100%;\n        padding: 10px;\n        padding-top: 12px;\n        box-sizing: border-box;\n        font-family: 'Segoe UI', sans-serif;\n    }\n\n    /* Título superior */\n    .torque-title {\n        font-size: 11px;\n        font-weight: 600;\n        color: #6c757d;\n        letter-spacing: 0.5px;\n        text-transform: uppercase;\n        width: 100%;\n        text-align: center;\n        flex-shrink: 0;\n        /* No se encoge */\n    }\n\n    /* Contenedor del SVG para centrarlo */\n    .svg-wrapper {\n        width: 100%;\n        max-width: 280px;\n        flex-grow: 1;\n        /* Ocupa el espacio */\n        display: flex;\n        align-items: center;\n        justify-content: center;\n    }\n\n    svg {\n        width: 100%;\n        overflow: visible;\n    }\n\n    /* Aguja (grupo) */\n    g {\n        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);\n    }\n\n    /* --- Estilos para texto DENTRO de SVG --- */\n    .label-num {\n        font-size: 12px;\n        fill: #6c757d;\n        font-weight: 500;\n    }\n\n    .torque-label-main-svg {\n        font-size: 10px;\n        font-weight: 700;\n        fill: #495057;\n        letter-spacing: 0.5px;\n        text-transform: uppercase;\n    }\n\n    .torque-value-neto-svg {\n        font-family: monospace;\n        font-size: 20px;\n        /* Más pequeño para que quepa */\n        font-weight: 700;\n        transition: fill 0.5s ease;\n    }\n\n    .positivo {\n        fill: #28a745;\n    }\n\n    .negativo {\n        fill: #dc3545;\n    }\n\n    .neutro {\n        fill: #495057;\n    }\n\n    /* --- Leyenda HTML (Valores a un lado) --- */\n    .torque-legend-html {\n        width: 100%;\n        display: flex;\n        justify-content: space-around;\n        padding: 0 10px;\n        margin-top: 5px;\n        box-sizing: border-box;\n        flex-shrink: 0;\n        /* No se encoge */\n    }\n\n    .legend-item {\n        display: flex;\n        align-items: center;\n        font-size: 11px;\n        /* Más pequeño para que quepa */\n        color: #343a40;\n    }\n\n    .dot {\n        width: 10px;\n        height: 10px;\n        border-radius: 50%;\n        margin-right: 5px;\n        border: 1px solid rgba(0, 0, 0, 0.1);\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1010,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a7c7e340d8a3d71e",
+        "type": "ui-template",
+        "z": "5c04f096fc175d45",
+        "group": "87d497d737fe100f",
+        "page": "",
+        "ui": "",
+        "name": "Corriente",
+        "order": 1,
+        "width": 4,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"current-card-container\">\n        <div class=\"visual-card current-card\">\n            <div class=\"card-title\">⚡ Corriente</div>\n            <div class=\"current-viz\">\n                <div class=\"current-plug\" v-bind:style=\"{ animation: msg.payload?.plugAnimationStyle ?? 'none' }\">🔌</div>\n            </div>\n            <div class=\"card-value-display\">{{ msg.payload?.currentValue ?? '0' }} <span class=\"card-unit\">A</span></div>\n        </div>\n    </div>\n</template>\n\n<style>\n    /* --- Contenedor y Estilos Generales --- */\n    .current-card-container {\n        width: 100%; height: 100%; /* Ocupa el espacio del widget */\n        display: flex; justify-content: center; align-items: center;\n        padding: 10px; box-sizing: border-box;\n        font-family: 'Segoe UI', sans-serif;\n    }\n    .visual-card.current-card {\n        background: #fff; border-radius: 10px; padding: 15px;\n        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); text-align: center;\n        display: flex; flex-direction: column; align-items: center;\n        justify-content: space-between;\n        min-height: 180px; /* Altura mínima */\n        width: 100%; /* Ocupa el ancho disponible */\n        box-sizing: border-box;\n    }\n    .card-title {\n        font-size: 1em; font-weight: 600; color: #333;\n        margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.5px;\n    }\n    .card-value-display {\n        font-size: 1.6em; font-weight: 700; color: #4263EB;\n        margin-top: 10px; font-family: monospace;\n    }\n    .card-unit { font-size: 0.75em; color: #777; }\n    .current-viz {\n        flex-grow: 1; display: flex; align-items: center;\n        justify-content: center; width: 100%; margin: 10px 0;\n    }\n\n    /* --- ESTILOS ESPECÍFICOS PARA CORRIENTE --- */\n    .current-plug {\n        font-size: 7em; /* Tamaño del enchufe */\n        color: #f57c00; /* Color naranja */\n        line-height: 1;\n        /* La animación viene del v-bind:style */\n    }\n\n    /* --- Keyframes para la animación de pulso --- */\n    /* (El nodo function debe generar el nombre 'pulse' en plugAnimationStyle) */\n    @keyframes pulse {\n        0%, 100% { transform: scale(1); opacity: 1; }\n        50% { transform: scale(1.15); opacity: 0.7; }\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1120,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4ae55dd62f8df0b",
+        "type": "function",
+        "z": "5c04f096fc175d45",
+        "name": "Conversión",
+        "func": "// --- RANGOS DE OPERACIÓN ---\nconst RANGES = {\n    speed: { min: 0, max: 3000 },\n    torque: { min: 0, max: 12 },\n    temp: { min: 20, max: 100 },\n    current: { min: 0, max: 10 },\n    voltage: { min: 0, max: 12 }\n};\n\n// --- LEER VALORES DEL MENSAJE ---\nconst data = {\n    temp: msg.temperatura || RANGES.temp.min,\n    rpm: msg.omega_rpm || RANGES.speed.min,\n    torque: msg.torque_motor || RANGES.torque.min,\n    current: msg.corriente || RANGES.current.min,\n    voltage: msg.V_motor || RANGES.voltage.min,\n    pwm: msg.pwm || 0,\n    load: msg.carga || 0\n};\n\n// --- FUNCIONES AUXILIARES ---\nfunction clamp(value, min, max) { return Math.max(min, Math.min(max, value)); }\nfunction valueToPercentage(value, min, max) {\n    const clamped = clamp(value, min, max);\n    return (max - min === 0) ? 0 : ((clamped - min) / (max - min)) * 100;\n}\n// Función para mapear un valor a una duración de animación (inversa)\nfunction valueToDuration(value, valMin, valMax, durationMax, durationMin) {\n    if (value <= valMin) return durationMax; // Quieto o muy lento\n    const rangeVal = valMax - valMin;\n    const speedRatio = rangeVal === 0 ? 0 : Math.min(1, (value - valMin) / rangeVal);\n    let duration = durationMax - speedRatio * (durationMax - durationMin);\n    return Math.max(durationMin, duration); // Asegurar duración mínima\n}\n\n// 3. NUEVO: Animación del Enchufe (Corriente) - Pulsación\nconst pulseDuration = valueToDuration(data.current, 0.1, RANGES.current.max, 3, 0.5); // Más corriente = más rápido pulsa\nconst plugAnimationStyle = data.current > 0.1\n    ? `pulse ${pulseDuration.toFixed(1)}s ease-in-out infinite`\n    : 'none';\n\n\n// --- CREAR OBJETO PAYLOAD ---\nmsg.payload = {\n    // Valores numéricos (sin cambios)\n    \n    currentValue: data.current.toFixed(1),\n    \n    tempFillHeight: valueToPercentage(data.temp, RANGES.temp.min, RANGES.temp.max) + '%',\n   \n    plugAnimationStyle: plugAnimationStyle, // NUEVO para Corriente\n\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 620,
+        "wires": [
+            [
+                "a7c7e340d8a3d71e"
+            ]
+        ]
+    },
+    {
+        "id": "debe37b26825bc2a",
+        "type": "ui-template",
+        "z": "5c04f096fc175d45",
+        "group": "1b3b7d4c3ed473e2",
+        "page": "",
+        "ui": "",
+        "name": "Velocidad",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"velocimetro-container\">\n        <svg width=\"100%\" height=\"100%\" viewBox=\"0 0 300 200\">\n            <defs>\n                <linearGradient id=\"arcGrad\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n                    <stop offset=\"0%\" style=\"stop-color:#1565c0;stop-opacity:0.3\" />\n                    <stop offset=\"50%\" style=\"stop-color:#5C7CFA;stop-opacity:0.5\" />\n                    <stop offset=\"100%\" style=\"stop-color:#1565c0;stop-opacity:0.3\" />\n                </linearGradient>\n                <filter id=\"glow\">\n                    <feGaussianBlur stdDeviation=\"3\" result=\"coloredBlur\" />\n                    <feMerge>\n                        <feMergeNode in=\"coloredBlur\" />\n                        <feMergeNode in=\"SourceGraphic\" />\n                    </feMerge>\n                </filter>\n            </defs>\n\n            <path d=\"M 30 150 A 120 120 0 0 1 270 150\"\n                  fill=\"none\"\n                  stroke=\"rgba(92,124,250,0.15)\"\n                  stroke-width=\"25\"\n                  stroke-linecap=\"round\" />\n\n            <g v-for=\"(marca, i) in marcas\" :key=\"i\">\n                <line\n                    :x1=\"marca.x1\"\n                    :y1=\"marca.y1\"\n                    :x2=\"marca.x2\"\n                    :y2=\"marca.y2\"\n                    :stroke=\"marca.valor === 0 ? '#ef5350' : '#5C7CFA'\"\n                    :stroke-width=\"marca.valor === 0 ? 3 : 2\"\n                    opacity=\"0.8\" />\n                <text\n                    :x=\"marca.tx\"\n                    :y=\"marca.ty\"\n                    text-anchor=\"middle\"\n                    font-size=\"11\"\n                    :fill=\"marca.valor === 0 ? '#ef5350' : '#37474f'\"\n                    font-weight=\"600\">\n                    {{ marca.label }}\n                </text>\n            </g>\n\n            <path\n                :d=\"arcoProgreso\"\n                fill=\"none\"\n                :stroke=\"velocidadColor\"\n                stroke-width=\"25\"\n                stroke-linecap=\"round\"\n                style=\"transition:all 0.5s ease\"\n                filter=\"url(#glow)\" />\n\n            <circle cx=\"150\" cy=\"150\" r=\"50\" fill=\"rgba(255,255,255,0.95)\" stroke=\"#5C7CFA\" stroke-width=\"3\" />\n            <circle cx=\"150\" cy=\"150\" r=\"45\" fill=\"rgba(92,124,250,0.05)\" />\n\n            <g :style=\"'transform-origin: 150px 150px; transform: rotate(' + anguloAguja + 'deg)'\" style=\"transition:transform 0.5s ease\">\n                <path\n                    d=\"M 150 150 L 145 145 L 148 90 L 152 90 L 155 145 Z\"\n                    :fill=\"velocidadColor\"\n                    stroke=\"#263238\"\n                    stroke-width=\"1.5\"\n                    filter=\"url(#glow)\" />\n                <circle cx=\"150\" cy=\"150\" r=\"8\" :fill=\"velocidadColor\" stroke=\"#263238\" stroke-width=\"2\" />\n            </g>\n\n            <text x=\"150\" y=\"145\" text-anchor=\"middle\" font-size=\"28\" :fill=\"velocidadColor\" font-weight=\"700\" font-family=\"monospace\">\n                {{ velocidadActual }}\n            </text>\n            <text x=\"150\" y=\"158\" text-anchor=\"middle\" font-size=\"12\" fill=\"#78909c\" font-weight=\"600\" letter-spacing=\"2\">\n                RPM\n            </text>\n\n            <text x=\"150\" y=\"180\" text-anchor=\"middle\" font-size=\"16\" :fill=\"velocidadColor\"> {{ iconDireccion }}\n            </text>\n        </svg>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            velocidad: 0\n        }\n    },\n    computed: {\n        velocidadActual() { return Math.round(this.velocidad); },\n        anguloAguja() { const p = this.velocidad / 3000; return p * 90; },\n        velocidadColor() { const abs=Math.abs(this.velocidad); if(abs>=2500)return'#1565c0'; if(abs>=2000)return'#1976d2'; if(abs>=1500)return'#2196f3'; if(abs>=1000)return'#42a5f5'; if(abs>=500)return'#5C7CFA'; return'#90caf9'; },\n        iconDireccion() { if(this.velocidad>50)return'▲'; if(this.velocidad<-50)return'▼'; return'●'; },\n        arcoProgreso() { const p=this.velocidad/3000; const angulo=p*90; if(Math.abs(angulo)<1)return''; const rad=(angulo-90)*(Math.PI/180); const r=120; const cx=150; const cy=150; const sx=30; const sy=150; const ex=cx+r*Math.cos(rad); const ey=cy+r*Math.sin(rad); const largeArc=Math.abs(angulo)>90?1:0; const sweepFlag=angulo>0?1:0; return`M ${sx} ${sy} A ${r} ${r} 0 ${largeArc} ${sweepFlag} ${ex} ${ey}`; },\n        marcas() { const v=[-3000,-2000,-1000,0,1000,2000,3000]; const m=[]; v.forEach(val=>{ const p=val/3000; const ang=(p*90-90)*(Math.PI/180); const rExt=120; const rInt=105; const rTxt=90; const cx=150; const cy=150; m.push({ valor:val, label:val===0?'0':Math.abs(val/1000)+'k', x1:cx+rInt*Math.cos(ang), y1:cy+rInt*Math.sin(ang), x2:cx+rExt*Math.cos(ang), y2:cy+rExt*Math.sin(ang), tx:cx+rTxt*Math.cos(ang), ty:cy+rTxt*Math.sin(ang)+5 }); }); return m; }\n    },\n    watch: {\n        msg(newMsg) { if (newMsg.omega_rpm !== undefined) { this.velocidad = parseFloat(newMsg.omega_rpm) || 0; } }\n    }\n}\n</script>\n\n<style scoped>\n.velocimetro-container{display:flex;justify-content:center;align-items:center;padding:10px; /* Reducido padding */ background:transparent;border-radius:12px; height: 100%; box-sizing: border-box;} /* Asegura altura */\nsvg{max-width:100%;height:100%; /* SVG ocupa todo el contenedor */} /* Cambiado height a 100% */\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1000,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3be34bceb3b22056",
+        "type": "ui-text",
+        "z": "5c04f096fc175d45",
+        "group": "30cd4a155ded2004",
+        "order": 1,
+        "width": 7,
+        "height": "1",
+        "name": "Estado Sistema",
+        "label": "Estado",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "estado-destacado",
+        "value": "temperatura > 80 ? \"🔴 SOBRECALENTAMIENTO\" : temperatura > 60 ? \"🟡 Temperatura Elevada\" : $abs(omega_rpm) > 2500 ? (omega_rpm > 0 ? \"🟢 Velocidad Alta\" : \"🟣 Velocidad Alta Reversa\") : $abs(omega_rpm) > 0 ? (omega_rpm > 0 ? \"🟢 Funcionando Normal\" : \"🟣 Funcionando Reversa\") : \"⚪ Motor Detenido\"",
+        "valueType": "jsonata",
+        "x": 780,
+        "y": 300,
+        "wires": []
+    }
+]
