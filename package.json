@@ -1,0 +1,12 @@
+{
+    "name": "Motor_DC",
+    "description": "Proyecto correspondiente al primer parcial de IOT",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
+    }
+}
